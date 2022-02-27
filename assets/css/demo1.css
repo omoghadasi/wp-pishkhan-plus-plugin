@@ -81,6 +81,7 @@
 *{
   outline: none !important;
   box-shadow: none !important;
+  transition: all .3s ease;
 }
 body{
   background-image: url('./../img/back.png');
@@ -88,11 +89,88 @@ body{
 body,h1,h2,h3,h4,h5,h6,p,a{
   font-family: iranyekan !important;
 }
-
+#adminmenuback{
+	display: none;
+	visibility: hidden;
+}
+#adminmenuwrap{
+	background: transparent;
+}
+#adminmenumain{
+}
+ul#adminmenu{
+	margin: 65px 0;
+	transition: all .2s ease-in-out;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 12px 0 0 12px;
+}
+ul#adminmenu>li:first-child{
+	border-radius: 12px 0 0 0;
+}
+ul#adminmenu>li:last-child{
+	border-radius: 0 0 0 12px;
+}
+#collapse-button,#collapse-button:hover{
+	color: #3c434a8e;
+}
+#adminmenu li.wp-menu-separator{
+	display: none;
+	visibility: hidden;
+}
+ul#adminmenu>li a{
+	color: #3c434a;
+	transition: all .3s ease;
+}
+ul#adminmenu>li a .wp-menu-image::before{
+	color: #3c434a;
+}
+ul#adminmenu>li:hover{
+	background-color: rgba(255, 255, 255, 0.6) !important;
+	padding-right: 15px;
+}
+ul#adminmenu>li.opensub>a,ul#adminmenu>li a .wp-menu-image::before{
+	background-color: unset !important;
+	color: #3c434a !important;
+}
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after, #adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after {
+	border-left-color: #fff;
+}
+#adminmenu ul.wp-submenu{
+	border-radius: 12px;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.9) !important;
+}
+#adminmenu ul.wp-submenu>li a, #adminmenu a:hover{
+	color: #3c434a !important;
+}
+ul#adminmenu>li.wp-has-current-submenu:hover{
+	padding-right: 0;
+}
+ul#adminmenu>li.wp-has-current-submenu{
+	background-color: rgba(255, 255, 255, 0.7) !important;
+}
+ul#adminmenu>li.wp-has-current-submenu a{
+	background-color: transparent !important;
+}
+ul#adminmenu>li.wp-has-current-submenu a .wp-menu-name{
+	color: #3c434a !important;
+}
+ul#adminmenu>li.wp-has-current-submenu .wp-submenu {
+	border-radius: 0;
+}
+ul#adminmenu>li.wp-has-current-submenu .wp-submenu li:hover {
+	padding-right: 15px;
+}
+#adminmenu ul.wp-submenu>li:hover{
+	padding-right: 10px;
+}
 .postbox{
   transition: all .2s ease-in-out;
-  -webkit-backdrop-filter: blur(250px);
-  backdrop-filter: blur(250px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 12px !important;
   border: none;

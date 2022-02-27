@@ -97,10 +97,16 @@ h1{
 	display: none;
 	visibility: hidden;
 }
+.wrap{
+	margin:65px 2px 0 20px !important;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 20px;
+	padding: 20px;
+}
 #adminmenuwrap{
 	background: transparent;
-}
-#adminmenumain{
 }
 ul#adminmenu{
 	margin: 65px 0;
@@ -145,7 +151,7 @@ ul#adminmenu>li.opensub>a,ul#adminmenu>li a .wp-menu-image::before{
 	border-left-color: #fff;
 }
 #adminmenu ul.wp-submenu{
-	border-radius: 12px;
+	border-radius: 20px;
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	background-color: rgba(255, 255, 255, 0.9) !important;
@@ -190,7 +196,6 @@ ul#adminmenu>li.wp-has-current-submenu .wp-submenu li:hover {
 }
 .postbox:hover{
   box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-  transform: scale(1.02);
 }
 .postbox-header{
   border-bottom: none;
@@ -199,7 +204,7 @@ ul#adminmenu>li.wp-has-current-submenu .wp-submenu li:hover {
 background-color: #F9F9FF;
 border: 1px solid #eee;
 border-radius: 20px;
-padding: 7px 10px;
+padding: 1px 10px;
 cursor: pointer;
 transition: all .3s ease-in-out;
 }
@@ -217,7 +222,7 @@ transition: all .3s ease-in-out;
 #quick-press #save-post{
   transition: all .3s ease-in-out;
   border-radius: 20px;
-  padding: 3px 10px !important;
+  padding: 1px 10px !important;
 }
 
 .community-events-footer{
@@ -313,7 +318,7 @@ transition: all .3s ease-in-out;
 	background-color: rgba(255, 255, 255, .55);
 	margin: 13px 5px;
 	padding: 7px;
-	border-radius: 12px;
+	border-radius: 20px;
 }
 .help-tab-content {
 	margin: 25px 0 12px 12px;
@@ -325,7 +330,7 @@ transition: all .3s ease-in-out;
 	padding-right: 15px;
 }
 .contextual-help-tabs .active{
-	border-radius: 15px;
+	border-radius: 20px;
 	background: rgba(255, 255, 255, .55) !important;
 	margin: 0;
 	border-right: none !important;
@@ -339,7 +344,7 @@ transition: all .3s ease-in-out;
 	color: #3c434a;
 }
 .welcome-panel{
-	border-radius: 12px;
+	border-radius: 20px;
 }
 .contextual-help-sidebar a{
 	transition: all .3s ease;
@@ -375,7 +380,7 @@ transition: all .3s ease-in-out;
 #wpadminbar .menupop .ab-sub-wrapper{
 	background-color: rgba(255, 255, 255, .9);
 	border: none;
-	border-radius: 12px;
+	border-radius: 20px;
 }
 #wpadminbar .quicklinks .menupop.hover ul li a{
 	color: #3c434a;
@@ -397,4 +402,188 @@ transition: all .3s ease-in-out;
 }
 #wpadminbar .quicklinks .menupop ul.ab-sub-secondary, #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu{
 	background: unset;
+}
+.site-health-progress{
+	height: 40px !important;
+	width: 40px !important;
+}
+.site-health-details a{
+	transition: all .3s ease-in-out;
+	border:1px solid#2271b1;
+	border-radius: 20px; 
+	padding: 3px 6px;
+	text-decoration: none;
+}
+.site-health-details a:hover{
+	border:1px solid transparent;
+	background-color: #2271b1;
+	color: white;
+	border-radius: 20px; 
+	padding: 3px 6px;
+	text-decoration: none;
+}
+#dashboard_right_now .inside #wp-version-message a{
+	transition: all .3s ease-in-out;
+	border:1px solid#2271b1;
+	border-radius: 20px; 
+	padding: 3px 7px;
+	text-decoration: none;
+}
+#dashboard_right_now .inside #wp-version-message a:hover{
+	border:1px solid transparent;
+	background-color: #2271b1;
+	color: white;
+	border-radius: 20px; 
+	padding: 3px 7px;
+	text-decoration: none;
+}
+#activity-widget #latest-comments #the-comment-list .comment-item{
+	margin: 10px;
+	border-radius: 20px;
+}
+.activity-block{
+	border-bottom: none;
+}
+#dashboard_activity .subsubsub{
+	border-top: none;
+}
+.wrap .page-title-action{
+	border-radius: 50px;
+	border: none;
+	transition: all .3s ease-in-out;
+}
+.wrap .page-title-action:hover{
+	background-color: #2271b1;
+	color: white;
+}
+.search-box #post-search-input ,#tag-search-input{
+	border-radius: 0 50px 50px 0;
+	margin: 0;
+	border: none;
+}
+.search-box #search-submit{
+	border-radius:50px 0 0 50px;
+	margin: 0;
+	border: none;
+	color: white;
+	background-color: #2271b1;
+}
+.tablenav .actions select{
+	border-radius: 50px;
+	border: 0;
+}
+.wp-core-ui .button{
+	transition: all .3s ease;
+	border-radius: 50px;
+	background-color: white;
+	color: #2271b1;
+	border: none;
+}
+.wp-core-ui .button:hover{
+	color: white;
+	background-color: #2271b1;
+}
+table.wp-list-table {
+	border-radius: 20px;
+	border: none;
+	background-color: rgba(255, 255, 255, .7);
+	overflow: hidden;
+}
+.alternate, .striped>tbody>:nth-child(odd), ul.striped>:nth-child(odd){
+	background-color: unset;
+}
+table.wp-list-table tbody tr{
+	transition: all .3s ease;
+}
+table.wp-list-table tbody tr:hover{
+	background-color: rgba(255, 255, 255, .8);
+	transform: scaleX(1.01);
+}
+.form-field input,textarea{
+	border-radius: 20px;
+	border: 0 !important;
+}
+.form-field select{
+	width: 95%;
+	border-radius: 20px;
+	border: 0;
+}
+.media-frame.mode-grid .uploader-inline{
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, .95);
+}
+.media-toolbar{
+	border-radius: 20px;
+}
+.media-frame.mode-grid .media-toolbar select{
+	font-family: iranyekan;
+	border-radius: 20px;
+}
+button, input, select, textarea{
+	font-family: iranyekan;
+}
+#media-search-input{
+	border-radius: 20px;	
+}
+.attachments-wrapper{
+	background-color: rgba(255, 255, 255, .85);
+	border-radius: 20px;
+}
+.drag-drop #drag-drop-area{
+	background-color: rgba(255, 255, 255, .85);
+	border-radius: 20px;
+}
+.theme-install-php .wp-filter{
+	border-radius: 20px;
+}
+.single-theme .theme-overlay .theme-wrap{
+	border-radius: 20px;
+	overflow: hidden;
+}
+.wp-filter .search-form input[type=search],.js.plugins-php .search-box .wp-filter-search,.plugin-install-php .wp-filter{
+	border-radius: 20px;
+}
+.js.plugins-php .search-box .wp-filter-search{
+	border: none;
+}
+.wp-filter{
+	border: none;
+}
+.wp-filter .search-form.search-plugins .wp-filter-search, .wp-filter .search-form.search-plugins select{
+	border-radius: 20px;
+}
+.plugin-card{
+	transition: all .3s ease;
+	border-radius: 20px;
+	border: none;
+	overflow: hidden;
+}
+.plugin-card:hover{
+	transform: translatey(-10px);
+}
+.upload-plugin .wp-upload-form, .upload-theme .wp-upload-form{
+	border-radius: 20px;
+	border: none;
+}
+.search-box input[name="s"], .tablenav .search-plugins input[name="s"], .tagsdiv .newtag{
+	border: none;
+	margin: 0;
+	border-radius: 0 20px 20px 0;
+}
+#createuser select{
+	width: unset;
+}
+#pass-strength-result.short{
+	margin-top: 10px;
+	border-radius: 20px;
+}
+#your-profile select,input[type='text'],input[type='email'],input[type='url']{
+	border: none;
+	border-radius: 20px;
+}
+#your-profile img{
+	border-radius: 50%;
+}
+#footer-thankyou,#footer-upgrade{
+	color: white;
 }
